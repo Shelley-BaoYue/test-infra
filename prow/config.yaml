@@ -37,6 +37,9 @@ data:
       sync_period: 1m
       # status_update_period specifies how often Tide will update GitHub status contexts. Defaults to the value of sync_period.
       status_update_period: 1m
+      context_options:
+        from-branch-protection: true
+        skip-unknown-contexts: true
       # queries specifies a list of queries(checklist). Only PR meets all the queries can be merged.
       queries:
       # the PR must posses all of the following labels
