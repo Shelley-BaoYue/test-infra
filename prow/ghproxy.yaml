@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: kmesh
+  namespace: kubeedge
   name: ghproxy
   labels:
     app: ghproxy
@@ -45,7 +45,7 @@ kind: Service
 metadata:
   labels:
     app: ghproxy
-  namespace: kmesh
+  namespace: kubeedge
   name: ghproxy
 spec:
   ports:
